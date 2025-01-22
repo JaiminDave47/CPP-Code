@@ -4,7 +4,13 @@
 using namespace std;
 
 int main(){
-    int a = 5;
-    cout << (a >> 2) << endl;
+    int n;
+    cout << "Enter n: ";
+    cin >> n;
+    if((n > 0) && (n & (n-1)) == 0){
+        cout << "Power of 2." << endl;
+    } else {
+        cout << "Not a power of 2." << endl;
+    }
     return 0;
 }
